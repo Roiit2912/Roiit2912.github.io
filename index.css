@@ -1,0 +1,112 @@
+.tab ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: grey;
+    position: fixed;
+
+}
+
+
+.tab li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+/* Change the link color on hover */
+.tab li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+
+
+
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.block1 , .block2 , .block3{
+
+	width: 33.3%;
+	height: auto;
+	background-color: aqua;
+	margin: 1px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.block1{margin-left: 0;}
+.block3{margin-right: 0;}
+form li{
+	list-style: none;
+	margin-bottom: 15px;
+
+}
+//form ul {
+	padding-left: 0;
+}
+label{
+	display: block;
+	cursor: pointer;
+	font-family: sans-serif;
+	padding-bottom: 2px;
+	color: black;
+}
+
+/*.block2 text-area{
+	width: 300px;
+	height: 400px;
+}*/
+
+.footer ul {list-style: none; padding-left: 0px;}
+
+
+@media (max-width: 800px) {
+	
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+	.block1 , .block2 , .block3{
+
+		width: 100%;
+		margin-top: 2px;
+	}
+
+	.hero{
+		
+		width: 100%;
+	}
+
+
+	.footer li a{
+		display: vertical;
+		padding-left: 0;
+		list-style: none;
+	}
+
+	.tab ul li a{
+		margin-left: 620px;
+		color: white;
+
+	}
+
+	.tab ul
+	{
+		
+		background-color: transparent; 
+	}
+
+	.tab ul li a:hover{
+		background-color: transparent;
+	}
+
+
+}
