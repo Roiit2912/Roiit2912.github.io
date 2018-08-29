@@ -77,12 +77,14 @@ label{
 	.block1 , .block2 , .block3{
 
 		width: 100%;
-		margin-top: 2px;
+		margin-bottom: 2px;
 	}
 
 	.hero{
 		
 		width: 100%;
+		margin: 0px 0px;
+		padding-bottom: 0px;
 	}
 
 
@@ -93,19 +95,21 @@ label{
 	}
 
 	.tab ul li a{
-		margin-left: 620px;
-		color: white;
+		//margin-left: 620px;
+		color: black;
 
 	}
 
 	.tab ul
 	{
+		position: relative;
 		
-		background-color: transparent; 
+		background-color: rgb(100,200,160); 
+		width: 100%
 	}
 
 	.tab ul li a:hover{
-		background-color: transparent;
+		background-color: grey;
 	}
 
 
