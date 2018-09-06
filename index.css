@@ -1,71 +1,121 @@
-.tab ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 200px;
-	background-color: white;
-	position: fixed;
-
+input[type=checkbox],
+.show-menu{
+    display:none;
 }
 
 
-.tab li a {
-	display: block;
-	color: black;
-	padding: 8px 16px;
-	text-decoration: none;
+*{
+    margin:0;
+    padding:0;
 }
 
+/*giving background image*/
+/*body{
+    background:url("http://res.cloudinary.com/arcodee/image/upload/v1504526843/dove_onkhki.jpg");
+}*/
 
-/* Change the link color on hover */
-.tab li a:hover {
-	background-color: #555;
-	color: white;
+/*styling our wrapper*/
+.wrapper{
+    max-width:960px;
+    margin:0 auto;
+    color:#ecf0f1;
+    font-family:helvetica;
+    position: fixed;
 }
 
+/*.wrapper h1{
+    color: black;
+}*/
+/*styling h1 in wrapper*/
+
+/*.wrapper h1{
+    padding:20px;
+    text-align:center;
+
+}*/
+
+/*styling navigation*/
+.navigation{
+    width: 100vw;
+    display:flex;
+    list-style-type:none;
+
+    
+}
+
+/*styling list items->li in navigation*/
+.navigation li{
+    background:#1a1a1a;
+    flex:1;
+    text-align:center;
+    transition:all .2s ease;
+
+
+}
+
+/*giving border left to all list items, but not to our first list item*/
+.navigation li:not(:first-child){
+    border-left:2px solid #ecf0f1;
+}
+
+/*styling hover*/
+.navigation li:hover{
+    background:#333333;
+    flex:1.1;
+}
+
+/*styling our anchor tag*/
+.navigation li a{
+    display:block;
+    padding:20px 0;
+    color:inherit;
+    text-decoration:none;
+}
 
 
 
 
 
 .container {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .block1 , .block2 , .block3{
 
-	width: 33.3%;
-	height: auto;
-	background-color: aqua;
-	margin: 1px;
-	margin-top: 0;
-	margin-bottom: 0;
+    width: 33.3%;
+    height: auto;
+    background-color: aqua;
+    margin: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    //justify-content: space-around;
 }
 .block1{margin-left: 0;}
 .block3{margin-right: 0;}
 form li{
-	list-style: none;
-	margin-bottom: 15px;
+    list-style: none;
+    margin-bottom: 15px;
 
 }
 //form ul {
-	padding-left: 0;
+    padding-left: 0;
 }
-label{
-	display: block;
-	cursor: pointer;
-	font-family: sans-serif;
-	padding-bottom: 2px;
-	color: black;
+.container label{
+    display: block;
+    cursor: pointer;
+    font-family: sans-serif;
+    padding-bottom: 2px;
+    color: black;
 }
 
-/*.block2 text-area{
-	width: 300px;
-	height: 400px;
-}*/
+/.block2 text-area{
+    width: 300px;
+    height: 400px;
+}
 
-//.footer ul {list-style: none; padding-left: 0px;}
+.footer ul {list-style: none; padding-left: 0px;}
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -97,53 +147,67 @@ label{
   .social{
     display: flex;
     flex-direction: row;
-    
+    //justify-content: space-around;
+     font-family: 'Galada';font-size: 22px;
   }
 
 
+
+
 @media (max-width: 800px) {
-	
-	.container{
-		display: flex;
-		flex-direction: column;
-	}
-	.block1 , .block2 , .block3{
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .block1 , .block2 , .block3{
 
-		width: 100%;
-		margin-bottom: 2px;
-	}
+        width: 100%;
+        margin-bottom: 2px;
+        //justify-content: space-around;
+    }
 
-	.hero{
-		
-		width: 100%;
-		margin: 0px 0px;
-		padding-bottom: 0px;
-	}
+    .hero{
+        
+        width: 100%;
+        margin: 0px 0px;
+        padding-bottom: 0px;
+    }
 
 
-	.footer li a{
-		display: vertical;
-		padding-left: 0;
-		list-style: none;
-	}
+   /* .footer li a{
+        display: vertical;
+        padding-left: 0;
+        list-style: none;
+    }*/
 
-	.tab ul li a{
-		//margin-left: 620px;
-		color: black;
-
-	}
-
-	.tab ul
-	{
-		position: relative;
-		
-		background-color: white; 
-		width: 100%
-	}
-
-	.tab ul li a:hover{
-		background-color: grey;
-	}
+    .show-menu{
+        background:#342a2a;
+        display:flex;
+        cursor:pointer;
+        padding:20px 0;
+        justify-content:left;
+    }
+    /*hiding our navigation*/
+    .navigation{
+        display:none;
+    }
+    
+    /*displaying our list items as block element; if checkbox is check*/
+    input[type=checkbox]:checked ~ .navigation{
+        display:block;
+        float: right;
+        width: 100%;
+    }
+    
+    /*removing border left from the pseudo class*/
+    .navigation li:not(:first-child){
+        border:0;
+    }
+    /*giving margin to list item, excluding last list item*/
+    .navigation li:not(:last-child){
+        margin:2px 0;
+    }
 
 
 }

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="f1.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
-
-
 <head>
 	<title>Educational website</title>
 </head>
 <body >
-<div class="tab">
-	<ul >
+<div class="wrapper">
+	
+	<label for="show-menu" class="show-menu">&#9776;</label>
+	<input type="checkbox" id="show-menu">
+	<ul class="navigation">
   <li><a href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
@@ -64,7 +65,7 @@
 				</li>
 				<li>
 					<label for="query">Query</label>
-					<input id="query" type="" name="" ></input>
+					<input id="query" type="textbox" name="" ></input>
 				</li>
 				<li>
 					<input type="submit" value="Submit" name="">
@@ -90,8 +91,8 @@
 				</li>
 				<li>
 					<label for="certificate">Do you want certificate</label>
-					<input id="certificate" type="checkbox" id="certificate"> Yes
-					<input id="certificate" type="checkbox" id="certificate"> No
+					<input id="certificate" type="radio" id="certificate"> Yes
+					<input id="certificate" type="radio" id="certificate"> No
 				</li>
 				<li>
 					<input type="submit" value="Submit" name="">
@@ -106,12 +107,14 @@
 
 
 <div class ="footer">
-	<h3 style="font-family: Galada">For more infomation Contact at </h3>
-	<div class="social">
+	<h3 style="font-family: Galada; font-size: 50;">For more infomation Contact at </h3>
+	
+		<div class="social">
 		<a href="#" class="fa fa-facebook"></a>
 		<a href="#" class="fa fa-twitter"></a>
 		<a href="#" class="fa fa-linkedin"></a>
 		</div>
+	
 
 </div>
 
